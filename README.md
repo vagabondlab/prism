@@ -18,8 +18,8 @@ This pipeline consists of two main stages:
 
 ```
 .
-├── sprits1        # Heudiconv script for initial conversion
-├── sprits2        # Heudiconv script for further organization
+├── script1        # Heudiconv script for initial conversion
+├── script2        # Heudiconv script for further organization
 ├── script6        # fMRIPrep execution script using Singularity
 └── README.md      # This file
 ```
