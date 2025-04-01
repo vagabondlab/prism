@@ -1,7 +1,5 @@
-# prism
-Pipeline for Reproducible Imaging Standardization and Management
-
-# DICOM to NIfTI Conversion and fMRIPrep Pipeline
+# prim
+DICOM to NIfTI Conversion and fMRIPrep Pipeline (Pipeline for Reproducible Imaging Standardization and Management).
 
 This repository contains a pipeline for converting DICOM files to NIfTI format using Heudiconv and subsequently processing the NIfTI files with fMRIPrep using Singularity.
 
