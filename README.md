@@ -31,14 +31,14 @@ Before running the pipeline, ensure you have the following installed:
 * **Heudiconv:** Install Heudiconv following the instructions on the official documentation.
 * **Singularity:** Install Singularity to run the fMRIPrep container.
 * **DICOM Files:** Place your DICOM files in the appropriate directory.
-* **Heuristic File:** Create a heuristic Python file that defines how to convert and name your DICOM files. This file will be utilized by `sprits1` and `sprits2`.
+* **Heuristic File:** Create a heuristic Python file that defines how to convert and name your DICOM files. This file will be utilized by `script1` and `script2`.
 * **fMRIPrep Singularity Image:** Download the fMRIPrep Singularity image.
 
 ## Usage
 
 ### 1. DICOM to NIfTI Conversion (Heudiconv)
 
-1.  **Modify Heuristic:** Edit `sprits1` and `sprits2` scripts to point to your DICOM directory and your heuristic file.
+1.  **Modify Heuristic:** Edit `script1` and `script2` scripts to point to your DICOM directory and your heuristic file.
 2.  **Run scrip1:**
     This script will perform the initial DICOM to NIfTI conversion.
 3.  **Run script2:**
