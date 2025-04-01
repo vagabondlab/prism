@@ -8,7 +8,7 @@ This repository contains a pipeline for converting DICOM files to NIfTI format u
 This pipeline consists of two main stages:
 
 1.  **DICOM to NIfTI Conversion (Heudiconv):**
-    * Uses Heudiconv (specifically, scripts `sprits1` and `sprits2`) to convert DICOM files into NIfTI format.
+    * Uses Heudiconv (specifically, scripts `script1` and `script2`) to convert DICOM files into NIfTI format.
     * Heudiconv helps organize and rename the converted NIfTI files based on the specified heuristic.
 2.  **fMRIPrep Processing (Singularity):**
     * Employs fMRIPrep (via script `script6`) within a Singularity container to perform preprocessing of the NIfTI files.
@@ -19,7 +19,7 @@ This pipeline consists of two main stages:
 ```
 .
 ├── script1        # Heudiconv script for initial conversion
-├── script2        # Heudiconv script for further organization
+├── script2        # Heudiconv script for further organization in BIDS
 ├── script6        # fMRIPrep execution script using Singularity
 └── README.md      # This file
 ```
@@ -31,7 +31,7 @@ Before running the pipeline, ensure you have the following installed:
 * **Heudiconv:** Install Heudiconv following the instructions on the official documentation.
 * **Singularity:** Install Singularity to run the fMRIPrep container.
 * **DICOM Files:** Place your DICOM files in the appropriate directory.
-* **Heuristic File:** Create a heuristic Python file that defines how to convert and name your DICOM files. This file will be utilized by `script1` and `script2`.
+* **Heuristic File:** Create a heuristic Python file that defines how to convert and name your DICOM files. This file will be utilized by `script2`.
 * **fMRIPrep Singularity Image:** Download the fMRIPrep Singularity image.
 
 ## Usage
